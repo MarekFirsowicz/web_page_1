@@ -1,0 +1,426 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    list-style: none;
+}
+
+
+/* font-family: 'Handlee', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto Mono', monospace; */
+
+/*global settings*/
+
+html {
+    font-size: 62.5%;
+    
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  /* max-height: 90vh; */
+  
+}
+
+a{
+  text-decoration: none;
+  color: orangered;
+}
+
+body{
+  font-size: 1.5rem;  
+  font-family: "Noto Sans JP", sans-serif;
+  overflow-x: hidden;
+}
+
+
+/* header section */
+.headerWrapper{
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+  height: 100vh;
+  width: 100vw;
+  background-image:  url('img/judo2.jpg');
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: fit-content;
+  justify-content: space-between;
+  padding: 1rem 0.5rem; 
+  
+}
+
+
+
+hgroup{ 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid orangered;  
+  
+  /* background-color: white; */
+  /* background: rgba(255, 165, 0, 0.7); */
+  
+  align-self: center;
+  /* box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4); */
+}
+
+.image_div{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  opacity: 0.8;
+  background-image:  url('img/logo.jpg');
+  background-size: 36%; 
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+h1{
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 600;
+  margin-bottom:15%;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  
+}
+
+.header_img{
+  float: left;
+  width: 100px;
+  opacity: 0.7;
+}
+
+.bannerQuote{
+  font-family: "Handlee", cursive;
+  font-weight: 600;
+  font-size: 1.6rem;
+  align-self:flex-end;
+  text-align: end; 
+  text-shadow: 4px 4px 8px #000000;
+
+}
+
+.bannerQuote span{
+  display: block;
+  text-align: end;
+}
+
+
+
+.headerBtn{  
+  width: 5rem;
+  height: 5rem;
+  font-size: 3.5rem;  
+  border: none;
+  color: white;
+  background-color: transparent;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.headerBtn:hover{
+  color: red;
+}
+
+.menuBtn{
+  justify-self: flex-start;
+  align-self: self-end;
+  text-shadow: 4px 4px 8px #000000;
+}
+
+.arrowDownBtn{
+  align-self: center; 
+  }
+
+.arrowDownBtn i{
+  text-shadow: 4px 4px 8px #000000;
+  /* color: red;
+  animation: arrow_down 1s infinite linear; */
+}
+
+/* main section */
+main{
+  margin-top: 100vh;
+  min-height:100vh;
+  width: 100vw; 
+  clip-path: polygon(0% 0px, 4% 3px, 9% 0px, 13% 3px, 19% 0.5px, 21% 3px, 26% 2px,30% 7px,50% 1px,     100% 0%, 100% 100%, 0% 100%);
+  position: relative;
+  z-index: 2;
+  margin-top: 100vh;
+  min-height:100vh;
+  width: 100vw; 
+  padding: 1rem;
+  top:50px;
+  /* background-color: rgb(245, 173, 38); */
+  background-image:  url('img/paper122.jpg');
+  background-repeat: repeat-y;
+  background-size:  100% 600px ;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  /* border-radius: 0% 100% 0% 100% / 100% 2% 98% 0% ; */
+  /* border-radius: 1% 99% 0% 100% / 100% 3% 97% 0% ; */
+}
+
+/* clip-path: polygon(1% 0%, 4% 100%, 9% 0%, 13% 100%, 19% 1%, 21% 100%, 26% 5%, 30% 100%, 36% 2%, 43% 100%, 50% 1%, 52% 100%, 61% 0%, 69% 94%, 70% 0%, 76% 100%, 81% 0%, 84% 100%, 91% 0%, 97% 100%, 99% 3%); */
+main section{
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center
+}
+
+main .about{
+  margin: 1rem 1rem 0 1rem;
+  max-width: 600px;
+  transform: rotate(3.5deg);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  
+}
+
+.about img{  
+  filter: sepia(50%);
+  border: 2px solid rgba(0, 0, 0, 0.8)  
+}
+
+.judo_insurance h3{
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.judo_insurance{
+  max-width: 280px;
+  font-family: "Handlee", cursive;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 81% 19% 97% 3% / 5% 95% 5% 95%  ;
+  border: 1px solid black;
+}
+
+.oldImage{
+  background-image: url('img/paper.jpg');
+  padding: 1rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+ 
+}
+
+.oldImage img{
+  margin-right: .5rem;
+  width: 180px;
+  float: left;
+  
+}
+
+.oldImage p{
+  font-family: "Handlee", cursive;
+  font-size: 2rem;
+  
+}
+
+/* .a{
+  width: 300px;
+  height: 300px;
+  
+}
+
+.a::before, a::after{
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  width: 70%;
+  height: 70%;
+  z-index: -1;
+}
+.a::before{
+  left: 20px;
+  transform: rotate(-4deg) skew(-9deg);
+  box-shadow: -7px 11px 9px rgba(0, 0, 0, .4);
+}
+.a::after{
+  right: 20px;
+  transform: rotate(4deg) skew(9deg);
+  box-shadow: 7px 11px 9px rgba(0, 0, 0, .4);
+} */
+
+
+.training_info {
+  font-family: "Handlee", cursive;
+  font-weight: 600;
+  font-size: 2.2rem;
+  border:1px solid  rgba(0, 0, 0, 0.4) ;
+  border-radius: 95% 5% 99% 1% / 4% 97% 3% 96% ;
+  padding: 1rem;
+}
+
+
+
+.training_info>p{
+  margin-bottom: 1rem;
+}
+
+
+.contact_info{
+  margin-top: 1rem;
+  display: block;
+}
+address{
+  display: block;
+}
+
+.mapBtn{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#mapContainer{
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 10;
+  top:0;
+  left: 0;
+  padding: 1rem;
+}
+
+#mapContainer h3{
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  font-size: 2rem;
+  /* line-height: 3rem; */
+  margin-bottom: 2rem;
+}
+
+#mapContainer iframe{
+  width: 80vw;
+  height: 80vh;
+  border: 1px solid orangered;
+ 
+}
+
+.polaroid{
+  margin: 1rem 1rem 0 1rem;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px ;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  font-family: "Roboto Mono", monospace;
+}
+
+
+.polaroid h2, p{
+  
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-top: 1rem;  
+}
+
+.club_story{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;;
+}
+
+.judo_story_h3{
+  width: fit-content;
+  align-self: center;
+  font-family: "Handlee", cursive;
+  font-size: 4rem;
+  font-weight: 800;;
+  margin: 3rem 0;
+  padding: 3rem;
+  text-align: center;
+  transform: rotate(-3deg);
+  border: 1px solid rgba(255, 69, 0, 0.5);
+  border-radius: 60% 40% 65% 35% / 48% 60% 40% 52% ;
+}
+
+.club_story article{
+  max-width: 600px;  
+}
+
+.storyDiv{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.pic1{
+  transform: rotate(-7deg);
+}
+
+.pic2{
+  transform: rotate(2deg);
+}
+
+.pic3{
+  transform: rotate(3deg);
+}
+
+.pic4{
+  transform: rotate(-6deg);
+}
+
+/* querries */
+
+
+@media (min-width:600px) and (min-height: 400px){
+  h1{
+    margin-bottom: 18%;
+  }
+  h1{
+    font-size: 6rem;
+  }
+  .bannerQuote{
+    font-size: 2.2rem;
+  }
+}
+
+/* animation */
+
+@keyframes arrow_down{
+  0%{transform: translateY(-5rem)}
+  50%{transform: translateY(0px)}
+  100%{transform: translateY(5rem)}
+}
